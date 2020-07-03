@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
 		perror("Fork fault\n");
 		return 2;
 	}
-	if(pid == 0)//proces potomny
+	if(pid == 0)
 	{
 		fd= open(argv[2], O_RDONLY);
 		if(fd == -1)
